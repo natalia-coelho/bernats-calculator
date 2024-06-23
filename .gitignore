@@ -2,3 +2,8 @@ __pycache__
 Lib
 Scripts
 pyvenv.cfg
+
+# terraform
+*.tfvars
+*.tfstate
+*.tfstate.backup

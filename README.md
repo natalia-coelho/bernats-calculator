@@ -41,4 +41,4 @@ I'm also working on this project building the DevOps/Infrastructure side of thin
   - [X] Clean up requirements.txt file
   - [ ] Create docker-compose.yml for local development
 - [ ] Documentation
-  - [ ] Guide on how to set up the development environment
+  - [X] Guide on how to set up the development environment
