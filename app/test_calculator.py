@@ -7,7 +7,7 @@ client = TestClient(app)
 def test_read_main():
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == ["This works!"]
+    assert response.json() == ["This is working better!"]
     
 def test_sum():
     response = client.post("/calculator/sum?number1=2&number2=2")
