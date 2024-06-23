@@ -3,6 +3,8 @@
 
 name: CI/CD Pipeline
 
+run-name:
+
 on:
   push:
     branches: ["main"]
@@ -61,6 +63,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Generate build number
+        id: buildnumber
+        uses: onyxmueller/build-tag-number@v1
+        with:
+          token: ${{secrets.github_token}}
+
       - name: Setup Docker Buildx
         uses: docker/setup-buildx-action@v3
 
@@ -83,7 +91,9 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/bernats-calculator:latest
+          tags: |
+            ${{ secrets.DOCKER_USERNAME }}/bernats-calculator:${{ env.BUILD_NUMBER }}
+            ${{ secrets.DOCKER_USERNAME }}/bernats-calculator:latest
           # Reference: https://docs.docker.com/build/ci/github-actions/cache/
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache-new,mode=max
