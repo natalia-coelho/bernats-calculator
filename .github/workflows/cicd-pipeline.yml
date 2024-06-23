@@ -67,7 +67,7 @@ jobs:
         id: buildnumber
         uses: onyxmueller/build-tag-number@v1
         with:
-          token: ${{secrets.github_token}}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Docker Buildx
         uses: docker/setup-buildx-action@v3
