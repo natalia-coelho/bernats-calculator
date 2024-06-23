@@ -34,6 +34,7 @@ I'm also working on this project building the DevOps/Infrastructure side of thin
   - [X] Build Dockerfile
   - [ ] Push Dockerfile to Dockerhub
   - [ ] Check for vulnerabilities in pipeline
+  - [ ] Add automatic semver
 - [ ] Infrastructure
   - [ ] Create Azure resource group
   - [ ] Create free tier web app
