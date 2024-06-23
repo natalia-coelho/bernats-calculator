@@ -35,9 +35,10 @@ I'm also working on this project building the DevOps/Infrastructure side of thin
   - [X] Push Dockerfile to Dockerhub
   - [ ] Check for vulnerabilities in pipeline
   - [ ] Add automatic semver
-- [ ] Infrastructure
-  - [ ] Create Azure resource group
-  - [ ] Create free tier web app
+  - [ ] Update infrastructure with `terraform apply`
+- [X] Infrastructure
+  - [X] Create Azure resource group
+  - [X] Create free tier web app
 - [ ] DevEx
   - [X] Clean up requirements.txt file
   - [ ] Create docker-compose.yml for local development
