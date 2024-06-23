@@ -1,6 +1,6 @@
 from typing import Union
 from fastapi import FastAPI
-from controller.calculator_controller import router as calculation_router
+from routers.calculator import router as calculation_router
 
 app = FastAPI()
 
