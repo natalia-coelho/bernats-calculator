@@ -7,6 +7,6 @@ app = FastAPI()
 # root endpoint
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {"This works!"}
 
 app.include_router(calculation_router)
