@@ -38,7 +38,7 @@ I'm also working on this project building the DevOps/Infrastructure side of thin
   - [ ] Create Azure resource group
   - [ ] Create free tier web app
 - [ ] DevEx
-  - [ ] Clean up requirements.txt file
+  - [X] Clean up requirements.txt file
   - [ ] Create docker-compose.yml for local development
 - [ ] Documentation
   - [ ] Guide on how to set up the development environment
