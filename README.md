@@ -22,7 +22,9 @@ fastapi dev .\app\main.py
 
 **How to test**
 - Go to the root app
-- Run the command `pytest` in the cmd
+- Run `pytest` command in the cmd
+- Verify if all tests have passed
+- Feel free to implement more of them :) 
 
 ## DevOps
 
