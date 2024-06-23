@@ -31,12 +31,13 @@ I'm also working on this project building the DevOps/Infrastructure side of thin
 - [ ] CI/CD
   - [X] Lint application
   - [X] Run automated tests
-  - [ ] Build Dockerfile
+  - [X] Build Dockerfile
   - [ ] Push Dockerfile to Dockerhub
 - [ ] Infrastructure
   - [ ] Create Azure resource group
   - [ ] Create free tier web app
 - [ ] DevEx
+  - [ ] Clean up requirements.txt file
   - [ ] Create docker-compose.yml for local development
 - [ ] Documentation
   - [ ] Guide on how to set up the development environment
