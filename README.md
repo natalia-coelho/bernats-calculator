@@ -6,12 +6,14 @@ I will create an API using [FastAPI](https://fastapi.tiangolo.com/) to be consum
 
 Here's how to run in development mode:
 
-- Clone the repository
+Clone the repository
+
 ``` bash
 git clone https://github.com/natalia-coelho/python-calculator
 ```
 
-- Run the following command
+Run the following command
+
 ``` bash
 fastapi dev .\app\main.py
 ```
@@ -34,5 +36,7 @@ I'm also working on this project building the DevOps/Infrastructure side of thin
 - [ ] Infrastructure
   - [ ] Create Azure resource group
   - [ ] Create free tier web app
+- [ ] DevEx
+  - [ ] Create docker-compose.yml for local development
 - [ ] Documentation
   - [ ] Guide on how to set up the development environment
