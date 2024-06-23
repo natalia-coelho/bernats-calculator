@@ -20,3 +20,5 @@ I'm also working on this project building the DevOps/Infrastructure side of thin
 - [ ] Infrastructure
   - [ ] Create Azure resource group
   - [ ] Create free tier web app
+- [ ] Documentation
+  - [ ] Guide on how to set up the development environment
