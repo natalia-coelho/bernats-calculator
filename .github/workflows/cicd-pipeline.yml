@@ -63,12 +63,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate build number
-        id: buildnumber
-        uses: onyxmueller/build-tag-number@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Setup Docker Buildx
         uses: docker/setup-buildx-action@v3
 
@@ -92,7 +86,7 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/bernats-calculator:${{ env.BUILD_NUMBER }}
+            ${{ secrets.DOCKER_USERNAME }}/bernats-calculator:${{ github.sha }}
             ${{ secrets.DOCKER_USERNAME }}/bernats-calculator:latest
           # Reference: https://docs.docker.com/build/ci/github-actions/cache/
           cache-from: type=local,src=/tmp/.buildx-cache
