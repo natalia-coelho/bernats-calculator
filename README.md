@@ -32,7 +32,7 @@ I'm also working on this project building the DevOps/Infrastructure side of thin
   - [X] Lint application
   - [X] Run automated tests
   - [X] Build Dockerfile
-  - [ ] Push Dockerfile to Dockerhub
+  - [X] Push Dockerfile to Dockerhub
   - [ ] Check for vulnerabilities in pipeline
   - [ ] Add automatic semver
 - [ ] Infrastructure

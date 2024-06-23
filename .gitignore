@@ -7,3 +7,4 @@ pyvenv.cfg
 *.tfvars
 *.tfstate
 *.tfstate.backup
+.terraform
